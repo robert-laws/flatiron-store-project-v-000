@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20180223125722) do
 
   create_table "carts", force: :cascade do |t|
@@ -52,6 +53,11 @@ ActiveRecord::Schema.define(version: 20180223125722) do
     t.integer  "current_cart_id"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+=======
+ActiveRecord::Schema.define(version: 20180223115947) do
+
+  create_table "users", force: :cascade do |t|
+>>>>>>> 689dabc0f4977c3e6421fb332f9c480db3ee9074
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -62,6 +68,11 @@ ActiveRecord::Schema.define(version: 20180223125722) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+<<<<<<< HEAD
+=======
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
+>>>>>>> 689dabc0f4977c3e6421fb332f9c480db3ee9074
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
